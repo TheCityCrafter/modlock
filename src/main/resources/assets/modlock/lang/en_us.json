@@ -1,0 +1,22 @@
+{
+  "modlock.configuration.mods": "Default allowed mods.",
+
+  "modlock.command.message.player_not_found": "Player not found.",
+
+  "modlock.command.message.add.success": "You are now allowed to use: %1$s.",
+  "modlock.command.message.add.success.target": "%1$s is now allowed to use: %2$s.",
+  "modlock.command.message.add.fail": "You are already allowed to use: %1$s.",
+  "modlock.command.message.add.fail.target": "%1$s is already allowed to use: %2$s.",
+
+  "modlock.command.message.remove.success": "You are no longer allowed to use: %1$s.",
+  "modlock.command.message.remove.success.target": "%1$s is no longer allowed to use: %2$s.",
+  "modlock.command.message.remove.fail": "You are already not allowed to use: %1$s.",
+  "modlock.command.message.remove.fail.target": "%1$s is already not allowed to use: %2$s.",
+
+  "modlock.command.message.has.success": "You are allowed to use: %1$s.",
+  "modlock.command.message.has.success.target": "%1$s is allowed to use: %2$s.",
+  "modlock.command.message.has.fail": "You are not allowed to use: %1$s.",
+  "modlock.command.message.has.fail.target": "%1$s is not allowed to use: %2$s.",
+
+  "modlock.event.player_tick.drop_not_allowed_item": "You are not allowed to use: %1$s. Please unlock %2$s first."
+}

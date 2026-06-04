@@ -1,0 +1,22 @@
+{
+  "modlock.configuration.mods": "Standart erlaubte Mods.",
+
+  "modlock.command.message.player_not_found": "Spieler nicht gefunden.",
+
+  "modlock.command.message.add.success": "Du darfst nun: %1$s nutzen.",
+  "modlock.command.message.add.success.target": "%1$s darf nun: %2$s nutzen.",
+  "modlock.command.message.add.fail": "Du darsfst: %1$s bereits nutzen.",
+  "modlock.command.message.add.fail.target": "%1$s darf: %2$s bereits nutzen.",
+
+  "modlock.command.message.remove.success": "Du darfst: %1$s nicht mehr nutzen.",
+  "modlock.command.message.remove.success.target": "%1$s darf: %2$s nicht mehr nutzen.",
+  "modlock.command.message.remove.fail": "Du darfst %1$s bereits nicht nutzen.",
+  "modlock.command.message.remove.fail.target": "%1$s darf: %2$s bereits nicht nutzen.",
+
+  "modlock.command.message.has.success": "Du darfst: %1$s nutzen.",
+  "modlock.command.message.has.success.target": "%1$s darf: %2$s nutzen.",
+  "modlock.command.message.has.fail": "Du darfst: %1$s nicht nutzen.",
+  "modlock.command.message.has.fail.target": "%1$s darf: %2$s nicht nutzen.",
+
+  "modlock.event.player_tick.drop_not_allowed_item": "Du darfst: %1$s nicht nutzen. Bitte entsperre erst %2$s."
+}
