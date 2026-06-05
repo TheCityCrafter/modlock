@@ -1,22 +1,41 @@
 {
-  "modlock.configuration.mods": "Standart erlaubte Mods.",
+  "modlock.configuration.mods": "Standardmäßig erlaubte Mods",
+  "modlock.configuration.mods.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
+  "modlock.configuration.itemPickup": "Item-Aufheben",
+  "modlock.configuration.itemPickup.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
+  "modlock.configuration.itemInInventory": "Item im Inventar",
+  "modlock.configuration.itemInInventory.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
+  "modlock.configuration.blockBreak": "Blockabbau",
+  "modlock.configuration.blockBreak.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
+  "modlock.configuration.blockUse": "Blockbenutzung",
+  "modlock.configuration.blockUse.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
 
-  "modlock.command.message.player_not_found": "Spieler nicht gefunden.",
+  "modlock.command.message.player_not_found": "§cSpieler nicht gefunden.",
 
-  "modlock.command.message.add.success": "Du darfst nun: %1$s nutzen.",
-  "modlock.command.message.add.success.target": "%1$s darf nun: %2$s nutzen.",
-  "modlock.command.message.add.fail": "Du darsfst: %1$s bereits nutzen.",
-  "modlock.command.message.add.fail.target": "%1$s darf: %2$s bereits nutzen.",
+  "modlock.command.message.add.success": "§aDu darfst %1$s§a nun verwenden.",
+  "modlock.command.message.add.success.target": "§a%1$s§a darf %2$s§a nun verwenden.",
+  "modlock.command.message.add.fail": "§cDu darfst %1$s§c bereits verwenden.",
+  "modlock.command.message.add.fail.target": "§c%1$s§c darf %2$s§c bereits verwenden.",
 
-  "modlock.command.message.remove.success": "Du darfst: %1$s nicht mehr nutzen.",
-  "modlock.command.message.remove.success.target": "%1$s darf: %2$s nicht mehr nutzen.",
-  "modlock.command.message.remove.fail": "Du darfst %1$s bereits nicht nutzen.",
-  "modlock.command.message.remove.fail.target": "%1$s darf: %2$s bereits nicht nutzen.",
+  "modlock.command.message.remove.success": "§aDu darfst %1$s§a nicht länger verwenden.",
+  "modlock.command.message.remove.success.target": "§a%1$s§a darf %2$s§a nicht länger verwenden.",
+  "modlock.command.message.remove.fail": "§cDu darfst %1$s§c bereits nicht verwenden.",
+  "modlock.command.message.remove.fail.target": "§c%1$s§c darf %2$s§c bereits nicht verwenden.",
 
-  "modlock.command.message.has.success": "Du darfst: %1$s nutzen.",
-  "modlock.command.message.has.success.target": "%1$s darf: %2$s nutzen.",
-  "modlock.command.message.has.fail": "Du darfst: %1$s nicht nutzen.",
-  "modlock.command.message.has.fail.target": "%1$s darf: %2$s nicht nutzen.",
+  "modlock.command.message.has.success": "§aDu darfst %1$s§a verwenden.",
+  "modlock.command.message.has.success.target": "§a%1$s§a darf %2$s§a verwenden.",
+  "modlock.command.message.has.fail": "§cDu darfst %1$s§c nicht verwenden.",
+  "modlock.command.message.has.fail.target": "§c%1$s§c darf %2$s§c nicht verwenden.",
 
-  "modlock.event.player_tick.drop_not_allowed_item": "Du darfst: %1$s nicht nutzen. Bitte entsperre erst %2$s."
+  "modlock.command.message.list.success": "§aDu darfst folgende Mods verwenden:",
+  "modlock.command.message.list.success.target": "§a%1$s§a darf folgende Mods verwenden:",
+  "modlock.command.message.list.fail": "§cDu hast keine freigeschalteten Mods.",
+  "modlock.command.message.list.fail.target": "§c%1$s§c hat keine freigeschalteten Mods.",
+
+  "modlock.command.message.clear.success": "§aDu hast alle freigeschalteten Mods entfernt.",
+  "modlock.command.message.clear.success.target": "§aAlle freigeschalteten Mods von %1$s§a wurden entfernt.",
+  "modlock.command.message.clear.fail": "§cEs gibt keine freigeschalteten Mods zum Entfernen.",
+  "modlock.command.message.clear.fail.target": "§c%1$s§c hat keine freigeschalteten Mods zum Entfernen.",
+
+  "modlock.event.player_tick.drop_not_allowed_item": "§cDu darfst %1$s§c nicht verwenden. Bitte schalte zuerst %2$s§c frei."
 }

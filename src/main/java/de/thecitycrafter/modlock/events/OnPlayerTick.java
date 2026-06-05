@@ -27,6 +27,10 @@ public class OnPlayerTick {
                 return;
             }
 
+            if (!Config.ITEM_IN_INVENTORY.get()){
+                return;
+            }
+
             if (player.tickCount % 20 != 0) {
                 return;
             }
@@ -62,7 +66,7 @@ public class OnPlayerTick {
                 player.drop(stack, false);
 
                 player.sendSystemMessage(
-                        Component.translatable("modlock.event.player_tick.drop_not_allowed_item", stack.getHoverName().getString(), modID).withStyle(ChatFormatting.RED)
+                        Component.translatable("modlock.event.player_tick.drop_not_allowed_item", Component.literal(stack.getHoverName().getString()).withStyle(ChatFormatting.AQUA), Component.literal(modID).withStyle(ChatFormatting.AQUA)).withStyle(ChatFormatting.RED)
                 );
             }
         }

@@ -11,6 +11,10 @@ public class OnItemPickup {
     @SubscribeEvent
     public void onItemPickup(ItemEntityPickupEvent.Pre event) {
 
+        if (!Config.ITEM_PICKUP.get()) {
+            return;
+        }
+
         String modID = BuiltInRegistries.ITEM.getKey(event.getItemEntity().getItem().getItem()).getNamespace();
         if (event.getPlayer().hasData(Attachments.ALLOWED_MODS)) {
             var defaultAllowedMods = Config.DEFAULT_ALLOWED_MODS.get();
