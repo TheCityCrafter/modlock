@@ -1,14 +1,9 @@
 {
-  "modlock.configuration.mods": "Standardmäßig erlaubte Mods",
-  "modlock.configuration.mods.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
-  "modlock.configuration.itemPickup": "Item-Aufheben",
-  "modlock.configuration.itemPickup.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
-  "modlock.configuration.itemInInventory": "Item im Inventar",
-  "modlock.configuration.itemInInventory.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
-  "modlock.configuration.blockBreak": "Blockabbau",
-  "modlock.configuration.blockBreak.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
-  "modlock.configuration.blockUse": "Blockbenutzung",
-  "modlock.configuration.blockUse.description": "Dieser Sprachschlüssel wird derzeit nicht verwendet.",
+  "modlock.configuration.mods": "Default allowed mods",
+  "modlock.configuration.itemPickup": "Item pickup",
+  "modlock.configuration.itemInInventory": "Item in inventory",
+  "modlock.configuration.blockBreak": "Block break",
+  "modlock.configuration.blockUse": "Block use",
 
   "modlock.command.message.player_not_found": "§cSpieler nicht gefunden.",
 
@@ -37,5 +32,7 @@
   "modlock.command.message.clear.fail": "§cEs gibt keine freigeschalteten Mods zum Entfernen.",
   "modlock.command.message.clear.fail.target": "§c%1$s§c hat keine freigeschalteten Mods zum Entfernen.",
 
-  "modlock.event.player_tick.drop_not_allowed_item": "§cDu darfst %1$s§c nicht verwenden. Bitte schalte zuerst %2$s§c frei."
+  "modlock.event.player_tick.drop_not_allowed_item": "§cDu darfst %1$s§c nicht verwenden. Bitte schalte zuerst %2$s§c frei.",
+  "modlock.event.block_break.fail": "§cDu darfst: %1$s§c nicht abbauen. Bitte schalte zuerst %2$s §cfrei",
+  "modlock.event.block_use.fail": "§cDu darfst: %1$s§c nicht nutzen. Bitte schalte zuerst %2$s §cfrei"
 }

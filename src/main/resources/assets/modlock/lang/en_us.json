@@ -1,14 +1,9 @@
 {
   "modlock.configuration.mods": "Default allowed mods",
-  "modlock.configuration.mods.description": "This lang code is currently not in use.",
   "modlock.configuration.itemPickup": "Item pickup",
-  "modlock.configuration.itemPickup.description": "This lang code is currently not in use.",
   "modlock.configuration.itemInInventory": "Item in inventory",
-  "modlock.configuration.itemInInventory.description": "This lang code is currently not in use.",
   "modlock.configuration.blockBreak": "Block break",
-  "modlock.configuration.blockBreak.description": "This lang code is currently not in use.",
   "modlock.configuration.blockUse": "Block use",
-  "modlock.configuration.blockUse.description": "This lang code is currently not in use.",
 
   "modlock.command.message.player_not_found": "§cPlayer not found.",
 
@@ -37,5 +32,7 @@
   "modlock.command.message.clear.fail": "§cThere are no allowed mods to clear",
   "modlock.command.message.clear.fail.target": "§cThere are no allowed mods from %1$s §cto clear",
 
-  "modlock.event.player_tick.drop_not_allowed_item": "§cYou are not allowed to use: %1$s§c. Please unlock %2$s §cfirst"
+  "modlock.event.player_tick.drop_not_allowed_item": "§cYou are not allowed to use: %1$s§c. Please unlock %2$s §cfirst",
+  "modlock.event.block_break.fail": "§cYou are not allowed to break: %1$s§c. Please unlock %2$s §cfirst",
+  "modlock.event.block_use.fail": "§cYou are not allowed to use: %1$s§c. Please unlock %2$s §cfirst"
 }

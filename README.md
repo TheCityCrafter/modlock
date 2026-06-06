@@ -128,7 +128,7 @@ Additional languages can be added through custom language files.
 ---
 
 # ⬇️ Downloads
-![Get on Curseforge](https://i.imgur.com/03FHrXm.png)
+[![Get on Curseforge](https://i.imgur.com/03FHrXm.png)](https://www.curseforge.com/minecraft/mc-mods/modlock/)
 
 [![Get on Modrinth](https://i.imgur.com/hs0k7su.png)](https://modrinth.com/project/modlock)
 

@@ -2,6 +2,8 @@ package de.thecitycrafter.modlock;
 
 import de.thecitycrafter.modlock.attachments.Attachments;
 import de.thecitycrafter.modlock.commands.ModLockCommand;
+import de.thecitycrafter.modlock.events.OnBlockBreak;
+import de.thecitycrafter.modlock.events.OnBlockUse;
 import de.thecitycrafter.modlock.events.OnItemPickup;
 import de.thecitycrafter.modlock.events.OnPlayerTick;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -49,6 +51,8 @@ public class ModLock {
         NeoForge.EVENT_BUS.register(new OnItemPickup());
         NeoForge.EVENT_BUS.register(new OnPlayerTick());
         NeoForge.EVENT_BUS.register(new Attachments());
+        NeoForge.EVENT_BUS.register(new OnBlockBreak());
+        NeoForge.EVENT_BUS.register(new OnBlockUse());
 
         // Register the item to a creative tab
 
