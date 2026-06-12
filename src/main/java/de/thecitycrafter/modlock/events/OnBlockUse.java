@@ -10,6 +10,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 public class OnBlockUse {
+
     @SubscribeEvent
     public void onBlockUse(PlayerInteractEvent.RightClickBlock event) {
         Player player = event.getEntity();
@@ -18,15 +19,34 @@ public class OnBlockUse {
             return;
         }
 
-        String modID = BuiltInRegistries.BLOCK.getKey(event.getLevel().getBlockState(event.getPos()).getBlock()).getNamespace();
+        var level = event.getLevel();
+        var pos = event.getPos();
+        var state = level.getBlockState(pos);
 
+        if (state.getMenuProvider(level, pos) == null) {
+            return;
+        }
 
-        if (player.hasData(Attachments.ALLOWED_MODS)){
-            var defaultAllowedMods = Config.DEFAULT_ALLOWED_MODS.get();
-            if (!player.getData(Attachments.ALLOWED_MODS).getMods().contains(modID) && !defaultAllowedMods.contains(modID)){
-                event.setCanceled(true);
-                player.sendSystemMessage(Component.translatable("modlock.event.block_use.fail",  event.getLevel().getBlockState(event.getPos()).getBlock().getName().withStyle(ChatFormatting.AQUA), Component.literal(String.valueOf(modID)).withStyle(ChatFormatting.AQUA)));
-            }
+        String modID = BuiltInRegistries.BLOCK.getKey(state.getBlock()).getNamespace();
+
+        if (!player.hasData(Attachments.ALLOWED_MODS)) {
+            return;
+        }
+
+        var allowedMods = player.getData(Attachments.ALLOWED_MODS).getMods();
+        var defaultAllowedMods = Config.DEFAULT_ALLOWED_MODS.get();
+
+        if (!allowedMods.contains(modID) && !defaultAllowedMods.contains(modID)) {
+
+            event.setCanceled(true);
+
+            player.sendSystemMessage(
+                    Component.translatable(
+                            "modlock.event.block_use.fail",
+                            state.getBlock().getName().withStyle(ChatFormatting.AQUA),
+                            Component.literal(modID).withStyle(ChatFormatting.AQUA)
+                    )
+            );
         }
     }
 }
